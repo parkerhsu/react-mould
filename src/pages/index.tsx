@@ -1,9 +1,8 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 
 export default function IndexPage() {
-  const [name, setName] = useState('')
+  const [name, setName] = useState('');;
   const navigate = useNavigate()
 
   return (
