@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export default function IndexPage() {
-  const [name, setName] = useState('');;
+export default function IndexPage () {
+  const [name, setName] = useState('')
   const navigate = useNavigate()
 
   return (
     <div>
       <p>
         <a href="https://github.com/prall1024/react-mould" target='_blank' rel='noreferrer'>
-          React mould
+    React mould
         </a>
       </p>
 

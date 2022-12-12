@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom'
 
-export default function Hello({ name }: { name: string }) {
+export default function Hello ({ name }: { name: string }) {
   const navigate = useNavigate()
   const params = useParams()
 

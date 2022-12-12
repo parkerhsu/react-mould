@@ -4,7 +4,7 @@ import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
 import routes from '~react-pages'
 import './App.css'
 
-function App() {
+function App () {
   const [count, setCount] = useState(0)
 
   return (
