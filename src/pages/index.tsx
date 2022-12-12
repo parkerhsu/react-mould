@@ -19,7 +19,7 @@ export default function IndexPage () {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <div>
+      <div className='m-24'>
         <button onClick={() => navigate(`/hello/${encodeURIComponent(name)}`)}>
           Go
         </button>

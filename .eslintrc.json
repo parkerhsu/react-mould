@@ -30,6 +30,7 @@
       "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/no-unused-vars": "off",
-      "react/react-in-jsx-scope": "off"
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/triple-slash-reference": "off"
     }
 }
