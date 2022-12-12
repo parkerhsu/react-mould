@@ -21,6 +21,6 @@
       "vite-plugin-pages/client",
     ],
   },
-  "include": ["src"],
+  "include": ["src", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -9,9 +9,9 @@ import presetAttributify from '@unocss/preset-attributify'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
-    },
+      '~/': `${path.resolve(__dirname, 'src')}/`
+    }
   },
   // TODO： presetAttributify没有生效
-  plugins: [react(), Pages(), Unocss({ presets: [presetUno(), presetAttributify({})] })],
+  plugins: [react(), Pages(), Unocss({ presets: [presetUno(), presetAttributify({})] })]
 })
