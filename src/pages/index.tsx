@@ -6,11 +6,15 @@ export default function IndexPage () {
   const navigate = useNavigate()
 
   return (
-    <div>
+    <div className="">
       <p>
         <a href="https://github.com/prall1024/react-mould" target='_blank' rel='noreferrer'>
-    React mould
+          React mould
         </a>
+      </p>
+
+      <p>
+        <em>Opinionated React Starter Template</em>
       </p>
 
       <input
@@ -19,7 +23,7 @@ export default function IndexPage () {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <div className='m-24'>
+      <div>
         <button onClick={() => navigate(`/hello/${encodeURIComponent(name)}`)}>
           Go
         </button>
