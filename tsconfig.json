@@ -20,7 +20,9 @@
       "vite/client",
       "vite-plugin-pages/client",
     ],
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
-  "include": ["src", "vite.config.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["dist", "node_modules"]
 }

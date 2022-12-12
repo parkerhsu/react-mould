@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import Pages from 'vite-plugin-pages'
@@ -9,5 +10,8 @@ export default defineConfig({
       '~/': `${path.resolve(__dirname, 'src')}/`
     }
   },
-  plugins: [react(), Pages()]
+  plugins: [react(), Pages()],
+  test: {
+    environment: 'jsdom'
+  }
 })
