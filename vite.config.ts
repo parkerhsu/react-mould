@@ -1,4 +1,5 @@
 /// <reference types="vitest" />
+/// <reference types="vite/client" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import Pages from 'vite-plugin-pages'
@@ -12,6 +13,7 @@ export default defineConfig({
   },
   plugins: [react(), Pages()],
   test: {
-    environment: 'jsdom'
+    environment: 'jsdom',
+    globals: true
   }
 })
